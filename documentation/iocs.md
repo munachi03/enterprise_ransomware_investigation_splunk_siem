@@ -42,4 +42,4 @@
 
 ## Ruled Out
 
-- **Administrator@192.168.69.103** accessing we9041srv around the incident window — assessed as unrelated routine/scheduled administrative activity; access pattern predates the incident by 2 weeks with consistent ~15-minute intervals.
+- **Administrator@192.168.69.103** — accessed we9041srv around the same time as the ransom notes were dropped, but this is an already existing pattern: the same account/IP shows up every ~15 minutes going back to August 10, well before the incident. Treated as routine scheduled activity (likely a monitoring or backup job), not part of the attack.
