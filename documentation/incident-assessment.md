@@ -6,7 +6,7 @@
 
 ## Summary
 
-This investigation found that a Cerber ransomware infection started on we8105desk under the bob.smith account. The malware escalated its privileges, disabled Windows recovery features, contacted external command-and-control (C2) servers, and eventually spread to the network fileshare on we9041srv, where ransom notes were dropped across approximately 640 folders.
+This investigation found that a Cerber ransomware infection started on we8105desk under the bob.smith account. The malware escalated its privileges, disabled Windows recovery features, contacted external command-and-control (C2) servers, and eventually spread to the network fileshare on we9041srv, where ransom notes were dropped across 640 folders.
 
 ## Initial Access
 
