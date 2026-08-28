@@ -42,9 +42,9 @@ index=botsv1 sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational"
 | table _time, host, Event.EventData.Data
 ```
 
-**Logic:** Simple keyword search for the filenames in the raw process creation data. No path-validation logic is built in. This is a triage query, meant to be manually reviewed rather than used as a high-confidence auto-alert.
+**Logic:** Simple keyword search for the filenames in the raw process creation data. No path validation logic is built in. This is a triage query, meant to be manually reviewed rather than used as a high confidence auto alert.
 
-**Expected behavior:** For `osk.exe` and `explorer.exe`, check each result's path against the known-good location. `osk.exe` should normally be in `C:\Windows\System32\`, and `explorer.exe` should normally be in `C:\Windows\`. Anything outside those paths is suspicious. For `AdapterTroubleshooter.exe`, there is no legitimate Windows path to compare against. Any result at all should be treated as suspicious.
+**Expected behavior:** For `osk.exe` and `explorer.exe`, check each result's path against the known good location. `osk.exe` should normally be in `C:\Windows\System32\`, and `explorer.exe` should normally be in `C:\Windows\`. Anything outside those paths is suspicious. For `AdapterTroubleshooter.exe`, there is no legitimate Windows path to compare against. Any result at all should be treated as suspicious.
 
 **False positives:** Legitimate uses of `osk.exe` and `explorer.exe` from their correct paths will also show up here. That's expected, since this is a manual review query rather than a high-confidence auto-fire alert. `AdapterTroubleshooter.exe` should have no legitimate false positives.
 
@@ -56,7 +56,7 @@ index=botsv1 sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational"
 
 ## Detection 3: C2 Beaconing to Known-Bad Infrastructure
 
-**Objective:** Detect Suricata alerts associated with known trojan or command-and-control traffic so an analyst can quickly see which internal hosts are talking to known-malicious infrastructure.
+**Objective:** Detect Suricata alerts associated with known trojan or command and control traffic so an analyst can quickly see which internal hosts are talking to known malicious infrastructure.
 
 ```spl
 index=botsv1 sourcetype=suricata alert.category="A Network Trojan was detected"
