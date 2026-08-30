@@ -1,4 +1,4 @@
-# Incident Assessment — Cerber Ransomware Incident
+# Incident Assessment
 
 **Host:** we8105desk (workstation) → we9041srv (fileshare server)
 **Account:** bob.smith
