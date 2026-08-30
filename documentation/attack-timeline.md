@@ -1,4 +1,4 @@
-# Attack Timeline — Cerber Ransomware Incident
+# Attack Timeline
 
 **Host affected:** we8105desk (workstation) → we9041srv (fileshare server)
 **User account:** bob.smith
