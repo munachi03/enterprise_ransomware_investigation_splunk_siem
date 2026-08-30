@@ -1,4 +1,4 @@
-# Indicators of Compromise (IOCs) — Cerber Ransomware Incident
+# Indicators of Compromise (IOCs)
 
 **Host:** we8105desk (initial infection) → we9041srv (fileshare, lateral spread)
 **Account:** bob.smith
