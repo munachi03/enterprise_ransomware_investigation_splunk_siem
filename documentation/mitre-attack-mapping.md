@@ -1,4 +1,4 @@
-# MITRE ATT&CK Mapping — Cerber Ransomware Incident
+# MITRE ATT&CK Mapping
 
 **Host:** we8105desk (initial infection) → we9041srv (fileshare, lateral spread)
 **Account:** bob.smith
