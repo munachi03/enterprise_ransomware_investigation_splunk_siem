@@ -1,6 +1,6 @@
 # Splunk Detections: Cerber Ransomware Incident
 
-Three detections built from what this investigation found. I kept these intentionally simple, which includes a plain search plus a table, so someone with limited Splunk experience could read the query, understand what it's doing, and replicate it by themselves. These were built specifically from the BOTSv1 dataset and are meant to show the detection logic I used during this investigation rather than act as production ready detection rules.
+Three detections built from what this investigation found. I kept these intentionally simple, which includes a plain search plus a table, so someone with limited Splunk experience could read the query, understand what it's doing, and replicate it by themselves. These were built specifically from the BOTSv1 dataset and are meant to show the detection logic I used during this investigation rather than act as a production ready detection rule.
 
 ---
 
@@ -31,7 +31,7 @@ index=botsv1 sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational"
 
 ## Detection 2: Suspicious Execution of System-Named Binaries
 
-**Objective:** Surface any process execution whose filename matches a common Windows system binary (`osk.exe`, `explorer.exe`), so an analyst can manually check whether it ran from its legitimate location. Also flag any execution of `AdapterTroubleshooter.exe`, since this is not a real Windows utility. Its filename was invented by the malware to look legitimate, so any occurrence at all is worth investigating.
+**Objective:** Surface any process execution whose filename matches a common Windows system binary (`osk.exe`, `explorer.exe`), so an analyst can manually check whether it ran from its legitimate location. Also flag any execution of `AdapterTroubleshooter.exe`, since this is not a real Windows utility. Its filename was invented by the malware to look legitimate, so any occurrence of it at all is worth investigating.
 
 ```spl
 index=botsv1 sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational"
