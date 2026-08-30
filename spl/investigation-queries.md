@@ -1,4 +1,4 @@
-# Investigation Queries: Cerber Ransomware Incident
+# Investigation Queries
 
 Key SPL queries I used during this investigation, organized by what each one was used for. These are the queries that produced the findings documented in `attack-timeline.md` and `iocs.md`.
 
