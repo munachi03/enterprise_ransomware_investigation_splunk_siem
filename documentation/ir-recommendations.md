@@ -1,4 +1,4 @@
-# Incident Response Recommendations — Cerber Ransomware Incident
+# Incident Response Recommendations
 
 **Host:** we8105desk (workstation) → we9041srv (fileshare server)
 **Account:** bob.smith
