@@ -1,4 +1,4 @@
-# Splunk Detections: Cerber Ransomware Incident
+# Splunk Detections
 
 Three detections built from what this investigation found. I kept these intentionally simple, which includes a plain search plus a table, so someone with limited Splunk experience could read the query, understand what it's doing, and replicate it by themselves. These were built specifically from the BOTSv1 dataset and are meant to show the detection logic I used during this investigation rather than act as a production ready detection rule.
 
