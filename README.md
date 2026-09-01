@@ -6,10 +6,6 @@ This project documents a SOC-style investigation of a ransomware incident using 
 
 The objective was to investigate a live alert the way a SOC analyst would, start from the alert, pivot through the available telemetry, and build an evidence-based case rather than working backward from known answers. The investigation combined dataset reconnaissance, alert triage, process analysis, network analysis, and lateral movement confirmation to produce a complete incident investigation report.
 
-## Full Report
-
-[Enterprise Ransomware Investigation Report](report/enterprise_ransomware_investigation.pdf)
-
 ## Objectives
 
 * Investigate a real IDS alert and determine whether it represented a successful compromise.
@@ -125,6 +121,10 @@ enterprise_ransomware_investigation_splunk_siem/
 * Detection Engineering
 * Incident Response Planning
 * Technical Documentation
+
+## Full Report
+
+[Enterprise Ransomware Investigation Report](report/enterprise_ransomware_investigation.pdf)
 
 ## Disclaimer
 
