@@ -8,7 +8,7 @@ The objective was to investigate a live alert the way a SOC analyst would, start
 
 ## Full Report
 
-Enterprise Ransomware Investigation Report(report/enterprise_ransomware_investigation.pdf)
+[Enterprise Ransomware Investigation Report](report/enterprise_ransomware_investigation.pdf)
 
 ## Objectives
 
